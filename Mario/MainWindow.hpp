@@ -6,7 +6,6 @@
 class MainWindow : public BaseWindow<MainWindow> {
     HANDLE  m_hTimer;
     GameScene m_scene;
-    const int fps = 60;
 
     BOOL    InitializeTimer();
 

@@ -27,6 +27,9 @@
     <ClCompile Include="Util.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="GameElement\Floor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseWin.hpp">
@@ -45,6 +48,21 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="GameScene.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameElement\GameObject.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameElement\MovableGameObject.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameElement\StationaryGameObject.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameElement\Floor.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

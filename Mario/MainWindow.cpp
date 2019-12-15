@@ -1,4 +1,5 @@
 #include "MainWindow.hpp"
+#include "Global.hpp"
 
 LRESULT MainWindow::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam) {
     HWND hwnd = m_hwnd;
@@ -51,7 +52,7 @@ BOOL MainWindow::InitializeTimer() {
 
     LARGE_INTEGER li = { 0 };
 
-    if (!SetWaitableTimer(m_hTimer, &li, 1000 / fps,
+    if (!SetWaitableTimer(m_hTimer, &li, 1000 / Global::fps,
         nullptr, nullptr, FALSE)) {
         CloseHandle(m_hTimer);
         m_hTimer = nullptr;
