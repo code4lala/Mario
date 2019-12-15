@@ -156,6 +156,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="GameElement\Floor.cpp" />
+    <ClCompile Include="GameElement\Player.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainWindow.cpp" />
@@ -163,6 +164,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseWin.hpp" />
+    <ClInclude Include="GameElement\Player.hpp" />
     <ClInclude Include="Global.hpp" />
     <ClInclude Include="GameElement\Floor.hpp" />
     <ClInclude Include="GameElement\GameObject.hpp" />

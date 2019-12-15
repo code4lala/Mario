@@ -2,16 +2,17 @@
 
 #include <d2d1.h>
 
+template<typename T>
 class GameObject
 {
 protected:
-	int positionX;
-	int positionY;
+	T m_x;
+	T m_y;
 public:
 	virtual void DrawSelf(ID2D1RenderTarget* pRenderTarget, ID2D1SolidColorBrush* pBrush,
 		float nCellSize) = 0;
-	explicit GameObject(int x = 0, int y = 0) :positionX(x), positionY(y) {}
+	explicit GameObject(T x = 0, T y = 0) :m_x(x), m_y(y) {}
 	virtual ~GameObject() = default;
-	int x() const { return positionX; }
-	int y() const { return positionY; }
+	T x() const { return m_x; }
+	T y() const { return m_y; }
 };

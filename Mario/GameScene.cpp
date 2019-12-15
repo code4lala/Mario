@@ -43,7 +43,7 @@ HRESULT GameScene::CreateDeviceDependentResources() {
 		for (int j = 0; j < MAP_LENGTH; j++)
 		{
 			const int x = j;
-			const int y = 15 - i;
+			const int y = Global::CELL_COUNT - 1 - i;
 			switch (map[i][j])
 			{
 			case '-':
@@ -54,7 +54,7 @@ HRESULT GameScene::CreateDeviceDependentResources() {
 			}
 		}
 	}
-	
+
 	return S_OK;
 }
 
@@ -75,7 +75,12 @@ void GameScene::RenderScene() {
 		) * D2D1::Matrix3x2F::Translation(0.f, height)
 	);
 
+	pSolidBrush->SetColor(D2D1::ColorF(D2D1::ColorF::GreenYellow));
 	DrawMap();
+
+	pSolidBrush->SetColor(D2D1::ColorF(D2D1::ColorF::DarkCyan));
+	player.DrawSelf(m_pRenderTarget, pSolidBrush, cell);
+
 }
 
 void GameScene::DrawMap()

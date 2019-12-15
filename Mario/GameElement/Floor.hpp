@@ -1,7 +1,7 @@
 #pragma once
 #include "GameObject.hpp"
 
-class Floor final :public GameObject
+class Floor final :public GameObject<int>
 {
 public:
 	Floor(int x=0,int y=0):GameObject(x,y)

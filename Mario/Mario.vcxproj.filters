@@ -30,6 +30,9 @@
     <ClCompile Include="GameElement\Floor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="GameElement\Player.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseWin.hpp">
@@ -63,6 +66,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Global.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameElement\Player.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
